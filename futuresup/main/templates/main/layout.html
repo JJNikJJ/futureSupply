@@ -13,19 +13,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
 </head>
 <body>
-    <aside>
-        <img src="{% static 'main/img/logo.png' %}" alt = "Лого">
-        <span class="logo">FutureSupply</span>
-        <h3>Навигация</h3>
-        <ul>
-            <a href="{% url 'index' %}"><li><i class="fa-solid fa-house"></i>Главная</li></a>
-            <a href="{% url 'about' %}"><li><i class="fa-solid fa-person-shelter"></i>Про нас</li></a>
-            <a href="{% url 'news_home' %}"><li><i class="fa-solid fa-person-shelter"></i>Новости</li></a>
+<nav>
+    <img src="{% static 'main/img/logo.png' %}" alt="Лого">
+    <span class="logo">FutureSupply</span>
+    <ul>
+        <li><a href="{% url 'main' %}"><i class="fa-solid fa-house"></i>Главная</a></li>
+        <li><a href="{% url 'about' %}"><i class="fa-solid fa-person-shelter"></i>О нас</a></li>
+        <li><a href="{% url 'profile' %}"><i class="fa-solid fa-person-shelter"></i>Профиль</a></li>
+        <li><a href="{% url 'chat' %}"><i class="fa-solid fa-person-shelter"></i>Чат</a></li>
+    </ul>
+</nav>
 
-            <a href=""><li><i class="fa-solid fa-address-card"></i>Контакты</li></a>
-            <a href="{% url 'create' %}"><li><button class = "btn btn-info"><i class="fas fa-plus-circle"></i>Добавить запись</button></li></a>
-            </ul>
-    </aside>
+
     <main>
     {% block content_block %}
     {% endblock %}

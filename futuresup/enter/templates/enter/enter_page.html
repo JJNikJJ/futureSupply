@@ -1,10 +1,127 @@
+{% load static%}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scccalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fututre Supply</title>
+    <link rel="stylesheet" href="{% static 'enter/css/enter_page.css' %}" >
 </head>
 <body>
-$END$
+<div class="header">
+    <div class="header_left">
+        <div class="header_left_title">
+            Отслеживание<br/> флота беспилотных автомобилей
+        </div>
+        <div class="header_line"></div>
+        <div class="header_text">Мониторинг и управление передвижением беспилотных транспортных средств, предназначенных для перевозки грузов.</div>
+        <div class="div_button">
+            <a href="{% url 'main' %}">
+                <button class="button_header">
+                    Войти
+            </button></a>
+            <a href="{% url 'main' %}">
+                <button  class="button_header" >
+                Зарегистрироваться
+            </button></a>
+        </div>
+
+    </div>
+    <div class="header_right">
+        <img src="{% static 'enter/img/header_img.png' %}" class="car"/>
+    </div>
+</div>
+<div class="header_top">
+ <div class="header_top_button">
+     <img src="{% static 'enter/img/pngwing.png' %}" class="img_strelka"/>
+ </div>
+</div>
+<div class="glavnaya_str">
+    <div class="glavnaya_title">
+        Процесс включает в себя<br/> следующие ключевые аспекты
+    </div>
+    <div class="glavnaya_card">
+        <img src="{% static 'enter/img/1_card.png' %}">
+        <div class="card_flex_container">
+            <div class="card_text1">Cистемs ГНСС</div>
+            <div class="card_text2">Точное позиционирование в реальном времени.</div>
+            <ul class="ul_glavn">
+                <li>высокая точность в планировании маршрутов</li>
+                <li>эффективная доставка грузов вовремя</li>
+            </ul>
+        </div>
+    </div>
+    <div class="glavnaya_card">
+        <img src="{% static 'enter/img/2_card.png' %}">
+        <div class="card_flex_container">
+            <div class="card_text1">Радары и камеры</div>
+            <div class="card_text2">Непрерывный мониторинг окружающей среды.</div>
+            <ul class="ul_glavn">
+                <li>минимизирует риски столкновений</li>
+                <li>обеспечивает безопасность грузов в транзите.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="glavnaya_card">
+        <img src="{% static 'enter/img/3_card.png' %}">
+        <div class="card_flex_container">
+            <div class="card_text1">Взаимодействие с центром управления</div>
+            <div class="card_text2">Эффективное использование дорожной инфраструктуры. </div>
+            <ul class="ul_glavn">
+                <li>снижению затрат на топливо</li>
+                <li>повышение производительности </li>
+                <li>экономия ресурсов.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer_top">
+        <div class="footer_top_left">
+            <img src="{% static 'enter/img/1345563.png' %}"/>
+            Снабжение будущего
+        </div>
+        <div class="footer_top_center_left">
+            <ul>
+                <a href="#" class="a_link"> Заказ  </a>
+                <a href="#" class="a_link"> Новый заказ </a><br/><br/>
+                <a href="#" class="a_link"> Чат </a>
+                <a href="#" class="a_link"> Контакты </a><br/><br/>
+                <a href="#" class="a_link"> Регистрация </a>
+            </ul>
+        </div>
+        <div class="footer_top_center_right">
+            <div class="text_center_right">ИП БуТюБо</div>
+            <div class="text_center_right">ИНН 9999999999</div>
+            <div class="text_center_right">ОГРНИП</div>
+            <div class="text_center_right">9999999999999</div>
+        </div>
+        <div class="footer_top_right">
+            <div class="number">+7 (999) 999 99 99</div>
+            <div class="email">info@snab.ru</div>
+            <div class="social">
+                <img src="{% static 'enter/img/Group1189.png' %}"/>
+                <img src="{% static 'enter/img/Group1190.png' %}"/>
+                <img src="{% static 'enter/img/Group1191.png' %}"/>
+                <img src="{% static 'enter/img/Group1192.png' %}"/>
+            </div>
+        </div>
+    </div>
+    <div class="footer_center"></div>
+    <div class="footer_bottom">
+        <div class="footer_bottom_left">
+            © 2024 SnabF — Все права защищены
+        </div>
+        <div class="footer_bottom_center_right">
+            <a href="#">Пользовательское соглашение</a>
+        </div>
+        <div class="footer_bottom_right">
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
